@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Calender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e4a6dc225.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+    $(".reminder").hide();
+    $("#r2").show();
+    $(".wd").click(function(){
+        $("div").removeClass("active");
+        $(this).addClass("active");
+        $(".reminder").hide();
+        $("#r").show();
+    });
+    $(".we").click(function(){
+        $("div").removeClass("active");
+        $(this).addClass("active");
+        $(".reminder").hide();
+        $("#r").show();
+    });
+    $("#6").click(function(){
+        $("div").removeClass("active");
+        $("#6").addClass("active");
+        $(".reminder").hide();
+        $("#r1").show();
+    });
+    $("#8").click(function(){
+        $("div").removeClass("active");
+        $("#8").addClass("active");
+        $(".reminder").hide();
+        $("#r2").show();
+    });
+    $("#12").click(function(){
+        $("div").removeClass("active");
+        $("#12").addClass("active");
+        $(".reminder").hide();
+        $("#r3").show();
+    });
+    $("#21").click(function(){
+        $("div").removeClass("active");
+        $("#21").addClass("active");
+        $(".reminder").hide();
+        $("#r4").show();
+    });
+    $("#22").click(function(){
+        $("div").removeClass("active");
+        $("#22").addClass("active");
+        $(".reminder").hide();
+        $("#r5").show();
+    });
+    $("#23").click(function(){
+        $("div").removeClass("active");
+        $("#23").addClass("active");
+        $(".reminder").hide();
+        $("#r6").show();
+    });
+
+});
+      </script>
+</head>
+<body>
+	<div class="month">
+	    <div class="prev">&#10094;</div>
+	    <div class="text">October 2019</div>
+	    <div class="next">&#10095;</div>
+	</div>
+
+<div class="container1">
+  <div class="d">M</div>
+  <div class="d">T</div>
+  <div class="d">W</div>
+  <div class="d">T</div>
+  <div class="d">F</div>
+  <div class="e">S</div>
+  <div class="e">S</div>
+  
+  <div class="wd"></div>
+  <div id="1" class="wd">1</div>
+  <div id="2" class="wd">2</div>
+  <div id="3" class="wd">3</div>
+  <div id="4" class="wd">4</div>
+  <div id="5" class="we">5</div>
+  <div id="6" class="we">6 <div class="red">...</div> </div>
+  <div id="7" class="wd">7</div>
+  <div id="8" class="wd active">8 <div class="blue">..</div> </div>
+  <div id="9" class="wd">9</div>
+  <div id="10" class="wd">10</div>
+  <div id="11" class="wd">11</div>
+  <div id="12" class="we">12 <div class="green">..</div> </div>
+  <div id="13" class="we">13</div>
+  <div id="14" class="wd">14</div>
+  <div id="15" class="wd">15</div>
+  <div id="16" class="wd">16</div>
+  <div id="17" class="wd">17</div>
+  <div id="18" class="wd">18</div>
+  <div id="19" class="we">19</div>
+  <div id="20" class="we">20</div>
+  <div id="21" class="wd">21 <div class="gray">.</div> </div>
+  <div id="22" class="wd">22 <div class="gray">.</div> </div>
+  <div id="23" class="wd">23 <div class="gray">.</div> </div>
+  <div id="24" class="wd">24</div>
+  <div id="25" class="wd">25</div>
+  <div id="26" class="we">26</div>
+  <div id="27" class="we">27</div>
+  <div id="28" class="wd">28</div>
+  <div id="29" class="wd">29</div>
+  <div id="30" class="wd">30</div>
+  <div id="31" class="wd">31</div>
+  <div class="wd"></div>
+  <div class="we"></div>
+  <div class="we"></div>
+</div>
+
+<div id="r" class="reminder">
+  <div class="day">Day</div>
+  <div class="add">Add New</div>
+  <div class="date">Date</div>
+  <div class="r">Reminder</div>
+</div>
+<div id="r1" class="reminder">
+  <div class="day">Sunday</div>
+  <div class="add">Add New</div>
+  <div class="date">6/10/2019</div>
+  <div class="r">
+    <div class="h">O Movie</div>
+    <div class="lt"><i class="fas fa-map-marker-alt"></i>  Mantri Square Mall</div>
+    <div class="lt"><i class="fas fa-clock"></i>  11:00 AM - 1:30PM</div>
+  </div>
+  <div class="r">
+    <div class="h">O Shopping</div>
+    <div class="lt"><i class="fas fa-map-marker-alt"></i>  Mantri Square Mall</div>
+    <div class="lt"><i class="fas fa-clock"></i>  1:30 PM - 5:30PM</div>
+  </div>
+  <div class="r">
+    <div class="h"> O Attendance</div>
+    <div class="lt"><i class="fas fa-map-marker-alt"></i>  College Hostel</div>
+    <div class="lt"><i class="fas fa-clock"></i>  09:00PM</div>
+  </div>
+</div>
+
+	<div id="r2" class="reminder">
+		<div class="day">Today</div>
+		<div class="add">Add New</div>
+		<div class="date">8/10/2019</div>
+		<div class="r">
+			<div class="h">O Meeting with Mr.Manoj, Mr.Kapil, and 3 Others</div>
+			<div class="lt"><i class="fas fa-map-marker-alt"></i>  JP nagar Banglore</div>
+			<div class="lt"><i class="fas fa-clock"></i>  11:00 AM - 01:00PM</div>
+		</div>
+		<div class="r">
+			<div class="h"> O Attendance</div>
+			<div class="lt"><i class="fas fa-map-marker-alt"></i>  College Hostel</div>
+			<div class="lt"><i class="fas fa-clock"></i>  09:00PM</div>
+    </div>
+  </div>
+
+  	<div id="r3" class="reminder">
+      <div class="day">Saturday</div>
+      <div class="add">Add New</div>
+      <div class="date">12/10/2019</div>
+      <div class="r">
+        <div class="h">O Special class</div>
+        <div class="lt"><i class="fas fa-map-marker-alt"></i>  College</div>
+        <div class="lt"><i class="fas fa-clock"></i>  9:00 AM - 12:20PM</div>
+      </div>
+      <div class="r">
+        <div class="h"> O Attendance</div>
+        <div class="lt"><i class="fas fa-map-marker-alt"></i>  College Hostel</div>
+        <div class="lt"><i class="fas fa-clock"></i>  09:00PM</div>
+      </div>
+    </div>
+    
+    <div id="r4" class="reminder">
+      <div class="day">Monday</div>
+      <div class="add">Add New</div>
+      <div class="date">21/10/2019</div>
+      <div class="r">
+        <div class="h">O Maths & Digital Electronics Internal Exam</div>
+        <div class="lt"><i class="fas fa-map-marker-alt"></i>  College</div>
+        <div class="lt"><i class="fas fa-clock"></i>  9:00 AM - 12:20PM</div>
+      </div>
+    </div>
+
+    <div id="r5" class="reminder">
+      <div class="day">Tuesday</div>
+      <div class="add">Add New</div>
+      <div class="date">22/10/2019</div>
+      <div class="r">
+        <div class="h">O Java & Data Structures Internal Exam</div>
+        <div class="lt"><i class="fas fa-map-marker-alt"></i>  College</div>
+        <div class="lt"><i class="fas fa-clock"></i>  9:00 AM - 3:30PM</div>
+      </div>
+    </div>
+
+    <div id="r6" class="reminder">
+      <div class="day">Wednesday</div>
+      <div class="add">Add New</div>
+      <div class="date">23/10/2019</div>
+      <div class="r">
+        <div class="h">O Economics Internal Exam</div>
+        <div class="lt"><i class="fas fa-map-marker-alt"></i>  College</div>
+        <div class="lt"><i class="fas fa-clock"></i>  9:00 AM - 12:20PM</div>
+      </div>
+	  </div>
+</body>
+</html>

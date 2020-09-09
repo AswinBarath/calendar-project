@@ -1,0 +1,138 @@
+.container1 {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	text-align: center;
+	*justify-items: stretch;
+}
+
+* {box-sizing: border-box;}
+*li {list-style: none;	display:inline-block}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  display: grid;
+  grid-gap: 10px;
+  padding: 25px;
+  width: 100%;
+  background-color: rgb(255,255,255);
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.month .text {
+  color: #FF6F0D;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.month .prev {
+  text-align: left;
+  color: #908987
+}
+.month .next {
+  text-align: right;
+  color: #908987
+}
+
+.d {
+	color:gray;
+	padding: 20px;
+	font-weight: 550;
+}
+.e {
+	color:green;
+	padding: 20px;
+	font-weight: 550;
+}
+.we {
+	color:green;
+	padding: 20px;
+}
+.wd {
+	color:blue;
+	padding: 20px;
+}
+.red {
+	color: red;
+	font-size: 35px;
+	margin: -25px;
+}
+.green {
+	color: green;
+	font-size: 35px;
+	margin: -25px;
+}
+.gray {
+	color: gray;
+	font-size: 35px;
+	margin: -25px;
+}
+.blue {
+	color: blue;
+	font-size: 35px;
+	margin: -25px;
+}
+.active {		
+	background-color: #2E88CE;
+	border-radius: 50%;
+	margin: auto;
+	width: 35%;
+	height: 100%;
+}
+.wd.active {
+	color:white;
+}
+.we.active {
+	color: white;
+}
+.active .blue{
+	color:white;
+}
+.active .green{
+	color:white;
+}
+.active .red{
+	color:white;
+}
+.active .gray{
+	color:white;
+}
+.reminder {
+	display: grid;
+	padding: 20px;
+	background-color: #2E88CE;
+	grid-template-columns: 1fr 9fr;
+	grid-template-rows: 1fr 1fr;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.day {
+	font-size: 150%;
+	letter-spacing:1.5px;
+}
+.date {
+	font-size: 100%;
+	grid-column: span 2;
+}
+.add {
+ text-align: right;
+ font-weight: 250;
+ font-size: 150%;
+}
+.r {
+	font-size: 80%;
+	border-left: 1px dashed white;
+	margin-left: 10px;
+	padding: 10px;
+	grid-column: span 2;
+}
+.h {
+	font-weight: 600;
+	margin-left: -15px;
+}
+.lt {
+	padding: 0px 0px 0px 10px;
+	grid-column: span 2;
+}
