@@ -22,7 +22,7 @@
 ## Demo
 
 <p>
-<img src="assets/Calendar Project Demo.gif" alt="Calendar Project Demo" />
+<img src="assets/Calender Project Demo.gif" alt="Calendar Project Demo" />
 </p>
 
 ---
